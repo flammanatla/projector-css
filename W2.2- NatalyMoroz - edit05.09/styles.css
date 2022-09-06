@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+.first_screen {
+    background: url(background.png);
+    height: 865px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #ffffff;
+}
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 40px 60px 0;
+}
+.nav li {
+    display: inline-block;
+}
+.nav li a {    
+    padding: 0 0 30px 0; /*потрібен щоб показати картинку-підкреслення під активним пунктом меню */
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.8;
+}
+.item1 {
+    float: left;
+}
+.item2 {
+    padding: 0 46px;
+}
+.item3 {
+    float: right;
+}
+.nav li.active a{
+    background-image: url(active-menu.png);
+    background-repeat: no-repeat;
+    background-position: 0 30px;
+}
+.main-motto {
+    opacity: 0.9;
+    position: absolute;
+    left: 135px;
+    top: 181px;
+}
+h1 {
+    margin: 213px 0 0 0;
+    text-align: center;
+    font-family: 'Silk Serif';
+    font-weight: 400;
+    font-size: 88px;
+    letter-spacing: -0.03em;
+}
+.description {
+    margin: 75px 740px 0;
+    width: 95px;
+    height: 20px;
+    opacity: 0.9;
+}
+.avatar {
+    margin: 50px auto 0;
+    width: 640px;
+    height: 354px;
+}
