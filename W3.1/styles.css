@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    font-family: 'Tomorrow';
+}
+.dsk {
+    display: none;
+}
+.mob-logo {
+    background: url(img-mob/logo.svg);
+    width: 140px;
+    height: 14px;
+    display: inline-block;
+    margin: 0 22px;
+}
+header {
+    margin: 20px;
+    max-width: 320px;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+.mob-menu li {
+    display: inline-block;
+}
+
+.first-page {
+    background-image: url(img-mob/background-1.png);
+    height: 547px;
+}
+.container {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.big-text {
+    margin: 0;
+    line-height: 140%;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Tomorrow';
+}
+h1 {
+    padding-top: 20px;
+}
+.l1 {
+    padding-top: 120px;
+}
+.image {
+    position: absolute;
+    top: -130px;
+}
+#main-header-2 {
+    padding-top: 70px;
+}
+button {
+    background-color: black;
+    padding: 9px 28px;
+    font-family: 'Sintony';
+    font-size: 14px;
+    color: white;
+    margin: 15px 0;
+}
+.block-margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.second-font {
+    font-family: 'Sintony';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+}
+.third-page {
+    background-image: url(img-mob/background-2.png);
+    height: 460px;
+}
+.mob-padding {
+    padding: 30px 0;
+}
+.fifth-page {
+    background-image: url(img-mob/cacti-background.png);
+    height: 477px;
+}
+.fifth-page h2 {
+    position: relative;
+    top: 165px;
+    left: 170px;
+    width: 150px;
+}
+.sixth-page {
+    background-image: url(img-mob/background-6.png);
+    height: 662px;
+}
+.label {
+    font-family: 'Tomorrow';
+    font-size: 14px;
+}
+.tertiary-img {
+    position: absolute;
+    top: 380px;
+}
+.process1 h3 {
+    padding: 50px 0 0;
+}
+.l2 {
+    padding-top: 135px;
+}
+.sustainability {
+    background-image: url(img-mob/background-5-sustainability.png);
+    height: 320px;
+}
+#sust-header {
+    padding: 230px 0;
+}
+footer {
+    background-image: url(img-mob/footer.png);
+    height: 305px;
+}
+.newsletter h4 {
+    margin: 0;
+    padding: 50px 0 0 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.networks {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 5px;
+}
+.social {
+    display: inline-block;
+    position: absolute;
+    top: 87px;
+    left: 160px;
+}
+.inst {
+    background: url(img-mob/logo-instagram.svg);
+}
+.fb {
+    background: url(img-mob/logo-facebook.svg);
+}
+.sitemap-items li {
+    padding-bottom: 10px;
+    list-style: none;
+}
+@media all and (min-width: 900px) {
+    .mob {
+        display: none;
+    }
+    .dsk {
+        display: revert;
+    }
+    nav {
+        float: right;
+    }
+    header {
+        margin: 48px 100px 38px;
+        max-width: 1440px;
+    }
+    .logo {
+        background: url(img/logo.svg);
+        width: 238px;
+        height: 24px;
+        display: inline-block;
+    }
+    .search {
+        border: none;
+    }
+  
+    .dsk-menu li {
+        display: inline-block;
+        padding: 0 0 0 40px;
+    }
+    .dsk-menu li a {
+        letter-spacing: 0.04em;
+    }
+    li a {
+        font-size: 20px;
+    }
+    .background {
+        height: 862px;
+        background-size: cover;
+    }
+    .first-page {
+        background-image: url(img/background-main-page.png);
+        height: 610px;
+    }
+    .big-text {
+        width: 1240px;
+        font-size: 56px;
+    }
+    h1 {
+        margin: 0;
+        padding-top: 0;
+        position: relative;
+        top: 75px;
+    }
+    .line {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image {
+        position: absolute;
+        left: 530px;
+        top: -240px;
+    }
+    .container {
+        max-width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .block-margin {
+        margin-top: 160px;
+        margin-bottom: 160px;
+    }
+    .secondary-images {
+        float: left;
+        margin-right: 30px;
+    }
+    .second-font {
+        font-size: 40px;
+    }
+    h4 {
+        padding: 32px 0;
+    }
+  
+    .third-page {
+        background-image: url(img/background-2.png);
+    }
+    .third-page p {
+        margin: auto;
+        padding: 230px 0;
+    }
+    .fourth-page {
+        height: 768px;
+    }
+    .fourth-page h4 {
+        padding: 0;
+        margin-bottom: 64px;
+    }
+    .fourth-page p {
+        font-size: 24px;
+        line-height: 140%;
+    }
+    .fifth-page {
+        background-image: url(img/cacti-background.png);
+    }
+    .fifth-page h2 {
+        position: relative;
+        top: 250px;
+        left: 735px;
+        width: 535px;
+    }
+    
+    .tertiary-img {
+        position: relative;
+        top: -550px;
+        left: 725px;
+        width: 424px;
+        height: 375px;
+    }
+    .img2 {
+        padding-top: 150px;
+    }
+
+    .materials {
+        font-size: 20px;
+        line-height: 160%;
+        text-align: left;
+    }
+    .materials h5 {
+        font-weight: bold;
+    }
+    .sustainability {
+        background-image: url(img/background-5-sustainability.png);
+    }
+    #sust-header {
+        margin: auto;
+        padding: 370px 0;
+    }
+    .sixth-page {
+        background-image: url(img/background-6.png);
+        height: 1536px;
+    }
+    .process1 {
+        height: 600px;
+    }
+    .process2 {
+        padding: 64px 0;
+        height: 165px;
+    }
+    .process3 {
+        height: 375px;
+    }
+    .process1 h3 {
+        margin: 0;
+        position: relative;
+        top: 12px;
+        left: 205px;
+        width: 400px;
+    }
+    .l2 {
+        padding-top: 310px;
+    }
+    .img3 {
+        padding-top: 350px;
+    }
+    .sixth-page p {
+        width: 500px;
+    }
+    button {
+        background-color: white;
+        padding: 10px 28px;
+        font-family: 'Sintony';
+        font-size: 20px;
+        color: black;
+    }
+    footer {
+        background-image: none;
+    }
+    .newsletter {
+        text-align: center;
+    }
+    .newsletter h4 {
+        margin: 0;
+        padding: 42px 0 12px 0;
+        font-size: 24px;
+    }
+    .policy-items li {
+        display: inline-block;
+        padding: 16px;
+        font-family: 'Sintony';
+    }
+    .policy-items li a {
+        font-size: 14px;
+    }
+    .policy-items {
+        text-align: center;
+    }
+    .social {
+        display: inline-block;
+        position: static;
+    }
+    .social img {
+        padding: 12px 6px;
+    }
+    .sitemap {
+        float: right;
+    }
+    .sitemap-items {
+        margin: 0;
+    }
+    .sitemap-items li {
+        padding-bottom: 10px;
+        list-style: none;
+    }
+    .footer-section {
+        margin-top: 105px;
+        vertical-align: top;
+        margin-bottom: 140px;
+    }
+    .networks {
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+        margin: 12px 6px;
+    }
+    .inst {
+        background: url(img/logo-instagram.svg);
+    }
+    .fb {
+        background: url(img/logo-facebook.svg);
+    }
+}
