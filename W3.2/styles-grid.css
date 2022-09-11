@@ -32,11 +32,25 @@ h4 {
     opacity: 0.7;
 }
 
+.item-header {
+    grid-area: header;
+}
+p {
+    grid-area: text;
+}
+a {
+    grid-area: icon;
+}
 .stage-container {
     margin-top: 50px; 
     margin-left: 50px;
-    margin-right: 110px;
-    max-width: 200px;
+    display: grid;
+    grid-template-columns: [first] 2fr [second] 100px [third];
+    grid-template-rows: [first] auto [second] 120px [third] 100px [fourth];
+    grid-template-areas: 
+        "header ."
+        "text ."
+        ". icon";
 }
 img {
     padding: 35px;
@@ -45,10 +59,6 @@ img {
 .active img {
     background-color: #ffffff;
 }
-a   {
-    margin-left: auto;
-    margin-top: auto;
-}
 .stages {
     display: grid;
     grid-template-columns: 
@@ -56,8 +66,6 @@ a   {
 }
 .stage {
     box-shadow: 0px 0px 1px 0px #d9d9d9 inset;
-    display: flex;
-    flex-direction: column;
 }
 @media screen and (max-width: 400px) {
     .technology {
