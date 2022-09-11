@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 16px;
+}
+.background {
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    height: 575px;
+}
+.technology {
+    padding: 150px 0 0 210px;
+    color: #ffffff;
+}
+span {
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+}
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.active {
+    background-color: #0536FC;
+    color: #ffffff;
+}
+.active span {
+    opacity: 0.7;
+}
+
+.stage-container {
+    margin-top: 50px; 
+    margin-left: 50px;
+    margin-right: 110px;
+    max-width: 200px;
+}
+img {
+    padding: 35px;
+    display:block;
+}
+.active img {
+    background-color: #ffffff;
+}
+a   {
+    margin-left: auto;
+    margin-top: auto;
+}
+.stages {
+    display: grid;
+    grid-template-columns: 
+        repeat(auto-fill, minmax(320px, 1fr));
+}
+.stage {
+    box-shadow: 0px 0px 1px 0px #d9d9d9 inset;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 400px) {
+    .technology {
+        padding: 50px 0 0 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .stage {
+       height: 400px;
+    }
+}
