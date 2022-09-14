@@ -1,0 +1,118 @@
+.desktop-hidden {
+    display: none;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.textblock-photos {
+    margin: 100px 5% 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p {
+    width: 70%;
+    line-height: 28px;
+    float: right;
+}
+span {
+    padding-right: 30px;
+    position: relative;
+    top: -15px;
+    color: #71870E;
+}
+h2 {
+    font-family: 'Silk Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 64px;
+    display: inline;
+}
+.textblock {
+    width: 40%;
+    flex: 1 1 auto;
+}
+.text-margin {
+    margin: 100px 0 50px;
+}
+.clearfix::after { 
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+figcaption {
+    color: #71870E;
+    font-family: 'Montserrat';
+    padding: 75px 0 0 110px;
+}
+button {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #CD9A3D;
+    border: 0;
+    background-image: url(img/active-menu.png);
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+    background-color: transparent;
+    padding: 0 0 50px 120px;
+}
+.imageblock {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex: 1 1 auto;
+}
+.small-image {
+    position: relative;
+    left: 750px;
+}
+figure {
+    margin: 0;
+}
+
+@media all and (max-width: 1180px) { 
+    figcaption {
+        padding: 50px 0 0 40px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .text-margin {
+        margin: 50px 0 25px;
+    }
+}
+@media all and (max-width: 640px) { 
+    .desktop-hidden {
+        display: block;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+    .textblock-photos {
+        margin: 50px 10% 0 10%;
+    }
+    .textblock {
+        flex-basis: 100%;
+        text-align: center;
+        width: 100%;
+    }
+    .imageblock {
+        flex-basis: 100%;
+    }
+    p {
+        float: initial;
+        width: 100%;
+    }
+    .text-margin {
+        text-align: left;  
+    }
+    img {
+        margin: auto;
+    }
+}
