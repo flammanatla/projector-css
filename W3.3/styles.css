@@ -80,12 +80,13 @@ p {
     justify-content: space-between; */
     display: grid;
     grid-template-columns: 
-        repeat(auto-fill, minmax(500px, 1fr));
+        repeat(auto-fill, minmax(50vw, 1fr));
 }
 .main-image {
     background-image: url(img/main-page.png);
     background-repeat: no-repeat;
     height: 810px;
+    background-size: cover;
 }
 .logo-background {
     background-color: #FF8201;
