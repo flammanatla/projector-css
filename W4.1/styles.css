@@ -1,9 +1,35 @@
+@font-face {
+    font-family: 'Trade Gothic LT Extended';
+    src: 
+        url('fonts/Trade\ Gothic\ LT\ Extended.woff2') format('woff2'),
+        url('fonts/Trade\ Gothic\ LT\ Extended.woff') format('woff'),
+        url('fonts/Trade\ Gothic\ LT\ Extended.otf') format('otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Ogg';
+    src: 
+        url('fonts/OggLight.woff2') format('woff2'),
+        url('fonts/OggLight.woff') format('woff'),
+        url('fonts/OggLight.otf') format('otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Ogg';
+    src: 
+        url('fonts/OggMediumItalic.woff2') format('woff2'),
+        url('fonts/OggMediumItalic.woff') format('woff'),
+        url('fonts/OggMediumItalic.otf') format('otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
 .desktop-hidden {
     display: none;
 }
 body {
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: 'Trade Gothic LT Extended';
     font-size: 16px;
 }
 
@@ -17,17 +43,25 @@ p {
     width: 70%;
     line-height: 28px;
     float: right;
+    opacity: 0.85;
 }
-span {
+.article {
     padding-right: 30px;
     position: relative;
     top: -15px;
+    opacity: 0.55;
+}
+.green {
     color: #71870E;
 }
+.italic {
+    font-family: 'Ogg';
+    font-style: italic;
+    font-weight: 500;
+}
 h2 {
-    font-family: 'Silk Serif';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Ogg';
+    font-weight: 300;
     font-size: 60px;
     line-height: 64px;
     display: inline;
@@ -47,11 +81,12 @@ h2 {
  }
 figcaption {
     color: #71870E;
-    font-family: 'Montserrat';
+    font-family: 'Trade Gothic LT Extended';
     padding: 75px 0 0 110px;
+    opacity: 0.8;
 }
 button {
-    font-family: 'Montserrat';
+    font-family: 'Trade Gothic LT Extended';
     font-size: 16px;
     color: #CD9A3D;
     border: 0;
