@@ -62,17 +62,16 @@ button {
     padding: 0 0 50px 120px;
 }
 .imageblock {
-    /* display: flex;
-    align-items: center;
-    flex-direction: row-reverse; */
     flex: 1 1 auto;
-}
-.small-image {
-    position: relative;
-    left: 750px;
 }
 figure {
     margin: 0 0 0 100px;
+    position: relative;
+}
+.small-image {
+    position: absolute;
+    top: 250px;
+    right: 2vw;
 }
 
 @media all and (max-width: 1180px) { 
@@ -89,24 +88,16 @@ figure {
     .text-margin {
         margin: 50px 0 25px;
     }
+    .small-image {
+        top: 130px;
+    }
 }
 @media all and (max-width: 640px) { 
-    .desktop-hidden {
-        display: block;
-    }
     .mobile-hidden {
         display: none;
     }
-    .textblock-photos {
-        margin: 50px 10% 0 10%;
-    }
-    .textblock {
-        flex-basis: 100%;
-        text-align: center;
-        width: 100%;
-    }
-    .imageblock {
-        flex-basis: 100%;
+    figure {
+        margin: 0;
     }
     p {
         float: initial;
@@ -115,7 +106,29 @@ figure {
     .text-margin {
         text-align: left;  
     }
-    .mobile-image {
+    img {
         margin: auto;
+        width: 100vw;
+    }
+    
+    .textblock-photos {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .textblock {
+        margin: 50px 10% 0 10%;
+    }
+    .textblock {
+        text-align: center;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .imageblock {
+        flex-basis: 100%;
+    }
+    .small-image {
+        width: 50vw;
+        top: 350px;
+        right: 0;
     }
 }
