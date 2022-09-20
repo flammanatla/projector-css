@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Trade Gothic LT Extended';
+    src: 
+        url('fonts/Trade\ Gothic\ LT\ Extended.woff2') format('woff2'),
+        url('fonts/Trade\ Gothic\ LT\ Extended.woff') format('woff'),
+        url('fonts/Trade\ Gothic\ LT\ Extended.otf') format('otf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Ogg';
+    src: 
+        url('fonts/OggLight.woff2') format('woff2'),
+        url('fonts/OggLight.woff') format('woff'),
+        url('fonts/OggLight.otf') format('otf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Ogg';
+    src: 
+        url('fonts/OggMediumItalic.woff2') format('woff2'),
+        url('fonts/OggMediumItalic.woff') format('woff'),
+        url('fonts/OggMediumItalic.otf') format('otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+.desktop-hidden {
+    display: none;
+}
+body {
+    margin: 0;
+    font-family: 'Trade Gothic LT Extended';
+    font-size: 16px;
+}
+
+.textblock-photos {
+    margin: 100px 5% 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.textblock p {
+    width: 70%;
+    line-height: 28px;
+    float: right;
+    opacity: 0.85;
+}
+.article {
+    padding-right: 30px;
+    position: relative;
+    top: -15px;
+    opacity: 0.55;
+}
+.green {
+    color: #71870E;
+}
+.italic {
+    font-family: 'Ogg';
+    font-style: italic;
+    font-weight: 500;
+}
+h2 {
+    font-family: 'Ogg';
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 64px;
+    display: inline;
+}
+.textblock {
+    width: 40%;
+    flex: 1 1 auto;
+}
+.text-margin {
+    margin: 100px 0 50px;
+}
+.clearfix::after { 
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+figcaption {
+    color: #71870E;
+    font-family: 'Trade Gothic LT Extended';
+    padding: 75px 0 0 110px;
+    opacity: 0.8;
+}
+button {
+    font-family: 'Trade Gothic LT Extended';
+    font-size: 16px;
+    color: #CD9A3D;
+    border: 0;
+    background-image: url(img/active-menu.png);
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+    background-color: transparent;
+    padding: 40px 0 50px 120px;
+}
+.imageblock {
+    flex: 1 1 auto;
+}
+figure {
+    margin: 0 0 0 100px;
+    position: relative;
+}
+.small-image {
+    position: absolute;
+    top: 250px;
+    right: 2vw;
+}
+
+.container {
+    max-width: 50vw;
+    margin: 200px auto;
+}
+.container p {
+    padding: 100px 0 100px 280px;
+    line-height: 170%;
+}
+form {
+    padding-left: 120px;
+    width: calc(100% - 120px);
+}
+form div {
+    padding-bottom: 50px;
+}
+.input-style {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid #737373;
+    background-color: transparent;
+    font-family: 'Trade Gothic LT Extended';
+    color: #C4C4C4;
+}
+input::placeholder {
+    font-family: 'Trade Gothic LT Extended';
+    color: #C4C4C4;
+}
+input[type="checkbox"] {
+    width:auto;
+}
+.trick {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#newsletter {
+    margin-right: 20px;
+}
+#send {
+    display: block;
+    margin: auto;
+}
+@media all and (max-width: 1180px) { 
+    figure {
+        margin: 0 0 0 40px;
+    }
+    figcaption {
+        padding: 50px 0 0 40px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .text-margin {
+        margin: 50px 0 25px;
+    }
+    .small-image {
+        top: 130px;
+    }
+    .container {
+        max-width: 90vw;
+    }
+}
+@media all and (max-width: 640px) { 
+    .mobile-hidden {
+        display: none;
+    }
+    figure {
+        margin: 0;
+    }
+    .textblock p {
+        float: initial;
+        width: 100%;
+    }
+    .text-margin {
+        text-align: left;  
+    }
+    img {
+        margin: auto;
+        width: 100vw;
+    }
+    
+    .textblock-photos {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .textblock {
+        margin: 50px 10% 0 10%;
+    }
+    .textblock {
+        text-align: center;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .imageblock {
+        flex-basis: 100%;
+    }
+    .small-image {
+        width: 50vw;
+        top: 350px;
+        right: 0;
+    }
+    form {
+        padding-left: 0;
+        width: 100%;
+    }
+    .container p {
+        padding: 100px 0px;
+    }
+}
