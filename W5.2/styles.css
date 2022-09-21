@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src: 
+        url('fonts/BasisGrotesquePro-Regular.woff2') format('woff2'),
+        url('fonts/BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src: 
+        url('fonts/BasisGrotesquePro-Bold.woff2') format('woff2'),
+        url('fonts/BasisGrotesquePro-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+.section {}
+
+.section__text {}
+
+/*щоб змістити текстовий блок вліво на сторінці*/
+.section__text--left {} 
+
+.section__article {}
+
+.section__article--blue {}
+
+.section__header {}
+
+.section__motto {}
+
+
+.faq {}
+
+.faq__item {}
+
+.faq_question {}
+
+.faq__expanded-icon {}
+
+.faq__collapsed-icon {}
+
+.faq__answer {}
+
+.faq__answer--hidden {}
+
+.faq__divider {}
+
+
+.section__p {}
+
+.section--full-page {}
+
+.partner { }
+
+.partner__item {}
+
+.partner__logo {}
+
+.partner__name {}
+
+.partner__description {}
+
+.partner__description--hidden {}
+
+.partner__item:hover {}
+
+.arrow {}
+
+.arrow__icon {}
+
+
+.contact-form {}
+
+.contact-form__name {}
+
+.contact-form__msg {}
+
+.contact-form__email {}
