@@ -13,66 +13,181 @@
     font-weight: 700;
 }
 
-.section {}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'BasisGrotesquePro';
+    font-size: 16px;
+}
 
-.section__text {}
+.section {
+    margin-top: 150px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
 
-/*щоб змістити текстовий блок вліво на сторінці*/
-.section__text--left {} 
+.section__text {
+    width: 35%;
+}
 
-.section__article {}
+.section__article {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
-.section__article--blue {}
+.section__article--blue {
+    color: #0536FC;
+}
 
-.section__header {}
+.section__header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: -0.03em;
+    padding: 30px 0 70px 0;
+    margin: 0;
+}
 
-.section__motto {}
+.section__motto {
+    color: #B9B9B9;
+}
 
+.faq {
+    width: 32vw;
+    margin-left: auto;
+}
 
-.faq {}
+.faq__item {
+    border-top: 1px solid #B9B9B9;
+}
 
-.faq__item {}
+.faq__question {
+    padding: 30px 0 70px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    display: flex;
+    justify-content: space-between;
+}
 
-.faq_question {}
+.faq__answer {
+    padding-bottom: 70px;
+}
 
-.faq__expanded-icon {}
+.faq__answer--hidden {
+    display: none;
+}
 
-.faq__collapsed-icon {}
+.section__p {
+    line-height: 150%;
+    opacity: 0.6;
+    padding-bottom: 100px;
+}
 
-.faq__answer {}
+.section--full-page {
+    margin: 0;
+}
 
-.faq__answer--hidden {}
+.partner { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-.faq__divider {}
+.partner__item {
+    box-shadow: 0px 0px 1px 0px #d9d9d9 inset;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 
+    height: 450px;
+}
 
-.section__p {}
+.partner__item:hover {
+    background-color: #0536FC;
+    color: #ffffff
+}
 
-.section--full-page {}
+.partner__container {
+    margin-top: 14%; 
+    margin-left: 14%;
+    margin-right: 28%;
+}
 
-.partner { }
+.partner__logo {
+    height: 35px;
+}
 
-.partner__item {}
+.partner__name {
+    margin: 60px 0 70px 0;
+    height: 3em;
+}
 
-.partner__logo {}
+.partner__description--hidden {
+    display: none;
+}
+.partner__item:hover .partner__description--hidden {
+    display: initial;
+}
 
-.partner__name {}
+.arrow {
+    margin-left: auto;
+    margin-top: auto;
+}
 
-.partner__description {}
+.arrow__icon {
+    padding: 35px;
+    display: block;
+    background-color: #ffffff;
+}
 
-.partner__description--hidden {}
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
-.partner__item:hover {}
+.contact-form__field {
+    padding: 25px 0;
+}
 
-.arrow {}
+.contact-form__field-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+}
 
-.arrow__icon {}
+.contact-form__input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #737373;
+    background-color: transparent;
+    font-family: 'BasisGrotesquePro';
+    color: #C4C4C4;
+    padding-top: 20px;
+    width: 32vw;
+}
 
+.contact-form__input::placeholder {
+    font-family: 'BasisGrotesquePro';
+    font-size: 14px;
+    color: #C4C4C4;
+}
 
-.contact-form {}
+.contact-form__msg {
+    font-size: 14px;
+    color: #C4C4C4;
+}
 
-.contact-form__name {}
-
-.contact-form__msg {}
-
-.contact-form__email {}
+.btn {
+    background-color: #0536FC;
+    padding: 18px 35px;
+    margin: 100px 0 120px 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
