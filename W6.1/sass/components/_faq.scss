@@ -1,6 +1,13 @@
+@import "utilities/_mixins";
+
 .faq {
     width: 32vw;
     margin-left: auto;
+
+    @include for-non-desktop {
+        width: 100%;
+
+    }
 }
 
 .faq__item {
