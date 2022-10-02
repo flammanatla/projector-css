@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Teach for UA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <section class="section">
+        <div class="section__text">
+            <span class="section__article section__article--blue">
+                Підтримка</span>
+            <h2 class="section__header">Поширені запитання
+                &mdash; додаткова інформація</h2>
+            <span class="section__motto">Програма для змін у країні</span>
+        </div>
+        <div class="faq">
+            <div class="faq__item">
+                <div class="faq__question">Які переваги участі у програмі для школи?
+                    <img class="faq__expanded-icon" src="img/collapse.svg" alt="icon to collapse the question" />
+                </div>
+                <div class="faq__answer">Школа отримує позашкільні заходи для дітей, можливості
+                    професійного розвитку для адміністрації та педагогічного колективу,
+                    а також середовище постійного руху до нових освітніх програм
+                    в співтоваристві однодумців.</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">Хто стає учасниками програми?
+                    <img class="faq__collapsed-icon" src="img/expand.svg" alt="icon to expand the question" />
+                </div>
+                <div class="faq__answer faq__answer--hidden">blah blah</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">Яку підготовку отримують <br> учасники від програми?
+                    <img class="faq__collapsed-icon" src="img/expand.svg" alt="icon to expand the question" />
+                </div>
+                <div class="faq__answer faq__answer--hidden">blah blah</div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__question">Як програма підтримує учасників <br> протягом 2-х років?
+                    <img class="faq__collapsed-icon" src="img/expand.svg" alt="icon to expand the question" />
+                </div>
+                <div class="faq__answer faq__answer--hidden">blah blah</div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__text">
+            <span class="section__article section__article--blue">
+                Партнери</span>
+            <h2 class="section__header">Співпрацюємо <br>
+                &mdash; з однодумцями</h2>
+            <p class="section__p">Партнери є невід’ємною частиною нашої
+                спільноти — саме вони роблять всі наші зусилля можливим.</p>
+        </div>
+    </section>
+    <section class="section section--full-page">
+        <div class="partner">
+            <div class="partner__item">
+                <div class="partner__container">
+                    <img class="partner__logo" src="img/nix.svg" alt="">
+                    <div class="partner__name">N-IX
+                        software development</div>
+                    <div class="partner__description partner__description--hidden">Description for N-IX
+                        software development</div>
+                </div>
+                <a class="arrow" href="/01"><img class="arrow__icon" src="img/arrow.svg" /></a>
+            </div>
+            <div class="partner__item">
+                <div class="partner__container">
+                    <img class="partner__logo" src="img/western-nis.png" alt="">
+                    <div class="partner__name">WESTERN NIS <br>
+                        ENTERPRISE FUND</div>
+                    <div class="partner__description partner__description--hidden">Перший в Україні та Молдові
+                        регіональний
+                        фонд прямих інвестицій у бізнесі.</div>
+                </div>
+                <a class="arrow" href="/02"><img class="arrow__icon" src="img/arrow.svg" /></a>
+            </div>
+            <div class="partner__item">
+                <div class="partner__container">
+                    <img class="partner__logo" src="img/dhl.svg" alt="">
+                    <div class="partner__name">DHL Global network</div>
+                    <div class="partner__description partner__description--hidden">Description for DHL Global network
+                    </div>
+                </div>
+                <a class="arrow" href="/03"><img class="arrow__icon" src="img/arrow.svg" /></a>
+            </div>
+            <div class="partner__item">
+                <div class="partner__container">
+                    <img class="partner__logo" src="img/macpaw.svg" alt="">
+                    <div class="partner__name">MAC PAW
+                        software development</div>
+                    <div class="partner__description partner__description--hidden">Description for MAC PAW
+                        software development</div>
+                </div>
+                <a class="arrow" href="/04"><img class="arrow__icon" src="img/arrow.svg" /></a>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__text">
+            <span class="section__article section__article--blue">
+                Зв’язок</span>
+            <h2 class="section__header">Будь частиною змін у країні
+                &mdash; напиши нам</h2>
+            <p class="section__p">Якщо в тебе залишились
+                додаткові питання або ти хочеш бути частиною прогресивного
+                руху в Україні — обов’язково напиши нам.</p>
+        </div>
+        <form class="contact-form" action="result.html" method="POST">
+            <div class="contact-form__field">
+                <label class="contact-form__field-name">Імʼя
+                    <input class="contact-form__input" type="name" name="name" placeholder="Напишіть ваше ім’я" />
+                </label>
+            </div>
+            <div class="contact-form__field">
+                <label class="contact-form__field-name">Повідомлення
+                    <textarea class="contact-form__input contact-form__msg" rows="1" name="message"
+                        placeholder="Напишіть ваше повідомлення"></textarea>
+                </label>
+            </div>
+            <div class="contact-form__field">
+                <label class="contact-form__field-name">E-mail
+                    <input class="contact-form__input" type="email" name="email"
+                        placeholder="Напишіть вашу електронну адресу" />
+                </label>
+            </div>
+            <div class="empty-block"></div>
+            <button class="btn" type="submit">Відправити</button>
+        </form>
+    </section>
+</body>
+
+</html>
