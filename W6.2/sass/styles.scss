@@ -1,0 +1,54 @@
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 10,
+    7: $spacer * 20,
+);
+
+$border-radius: none;
+
+$primary: #0536FC;
+$secondary: #d9d9d9;
+
+$btn-padding-y: 18px;
+$btn-padding-x: 35px;
+$nav-link-padding-y: 2rem;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src:
+        url('../fonts/BasisGrotesquePro-Regular.woff2') format('woff2'),
+        url('../fonts/BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src:
+        url('../fonts/BasisGrotesquePro-Bold.woff2') format('woff2'),
+        url('../fonts/BasisGrotesquePro-Bold.woff2') format('woff');
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'BasisGrotesquePro';
+    font-size: 16px;
+}
+
+.letter-spacing {
+    letter-spacing: -0.03em;
+}
+
+.nav-item {
+    border: solid 1px $secondary;
+}
