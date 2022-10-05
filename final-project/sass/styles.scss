@@ -1,0 +1,223 @@
+@import "utilities/_mixins";
+@import "components/header";
+@import "components/footer";
+
+@font-face {
+    font-family: 'Dela Gothic One';
+    src:
+        url('../fonts/DelaGothicOne-Regular.woff2') format('woff2'),
+        url('../fonts/DelaGothicOne-Regular.woff') format('woff'),
+        url('../fonts/DelaGothicOne-Regular.eot') format('eot');
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 166%;
+}
+
+.mobile-show {
+    @include for-large-up {
+        display: none;
+    }
+}
+
+.desktop-show {
+    @include for-large-down {
+        display: none;
+    }
+}
+
+.breadcrumbs {
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+
+        &--current {
+            font-weight: 300;
+        }
+    }
+}
+
+aside {
+    margin-bottom: 20px;
+
+    .filters {
+        display: inline;
+
+        @include for-large-up {
+            padding-top: 50px;
+        }
+    }
+}
+
+.filters:first-child {
+    float: right;
+
+    @include for-large-up {
+        float: left;
+    }
+}
+
+.filter-link,
+.sorting-link {
+    text-decoration: none;
+    color: black;
+
+    @include for-large-up {
+        display: inline;
+    }
+}
+
+.filters-pane {
+    width: 320px;
+    height: 500px;
+    padding-top: 20px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px 8px rgba(179, 179, 179, 0.25), 4px 4px 6px rgba(135, 135, 135, 0.25);
+
+    @include for-large-up {
+        position: static;
+        display: -webkit-box;
+        box-shadow: none;
+        width: 200px;
+        height: 800px;
+        padding-top: 0px;
+
+    }
+}
+
+.filter {
+    flex-basis: 50%;
+
+    div {
+        padding-bottom: 5px;
+    }
+
+    legend {
+        font-weight: 700;
+        font-size: 14px;
+        padding: 0 0 10px;
+
+        @include for-large-up {
+            padding: 10px 0;
+        }
+    }
+
+    .size {
+        font-size: 14px;
+    }
+}
+
+.title {
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    text-align: right;
+
+    @include for-large-up {
+        font-size: 30px;
+        margin: 30px 0 60px;
+    }
+
+    @include for-extra-large-up {
+        font-size: 36px;
+    }
+}
+
+.container {
+    margin: 0 10px;
+
+    @include for-large-up {
+        margin: 0 80px 0 80px;
+    }
+}
+
+.dropdown {
+    padding: 0 5px;
+
+    &--expanded {
+        rotate: 180deg;
+        padding: 1px 5px 0 5px;
+    }
+}
+
+.grid-icon {
+    padding-right: 5px;
+}
+
+.sorting-pane {
+    @include for-large-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.catalogue-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    max-width: 48%;
+
+    @include for-extra-small-down {
+        max-width: 100%;
+    }
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    &__price {
+        font-weight: 600;
+        margin-top: auto;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .hovered-img {
+        display: none;
+    }
+
+    &:hover {
+        .product-item__image {
+            display: none;
+        }
+
+        .hovered-img {
+            display: inline;
+        }
+    }
+}
+
+.loader {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 30px 0 50px;
+    font-weight: 600;
+
+    &__link {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        padding-left: 5px;
+    }
+}

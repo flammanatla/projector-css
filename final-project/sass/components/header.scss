@@ -1,0 +1,45 @@
+@import "../utilities/_mixins";
+
+header {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-large-up {
+        margin: 40px 80px;
+        align-items: baseline;
+    }
+
+    .left-pane .header-item {
+        padding-right: 30px;
+    }
+
+    .right-pane {
+        display: flex;
+        float: right;
+
+        @include for-large-up {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .header-item {
+            font-family: 'Raleway';
+        }
+    }
+}
+
+.header-item {
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+
+    &--current {
+        color: #DA1F39;
+        font-weight: 700;
+
+    }
+}

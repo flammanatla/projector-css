@@ -1,0 +1,67 @@
+@import "../utilities/_mixins";
+
+footer {
+    font-size: 14px;
+    line-height: 166%;
+    background-color: #F4F4F4;
+
+    .container {
+        margin: 0 10px;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
+
+.scroll-up {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+}
+
+.nav-items {
+    padding: 0px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+
+    @include for-large-up {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.nav-item {
+    list-style: none;
+    padding-bottom: 10px;
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &--red {
+            color: #DA1F39;
+            font-weight: 700;
+        }
+    }
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.contacts div {
+    padding-bottom: 10px;
+
+    @include for-large-up {
+        padding-bottom: 14px;
+    }
+}
+
+.contacts {
+    grid-column: 3;
+    grid-row: 1 / 5;
+}

@@ -1,0 +1,40 @@
+header {
+  margin: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 992px) {
+    header {
+      margin: 40px 80px;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline; } }
+  header .left-pane .header-item {
+    padding-right: 30px; }
+  header .right-pane {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right; }
+    @media (min-width: 992px) {
+      header .right-pane {
+        font-size: 16px;
+        line-height: 19px; } }
+    header .right-pane .header-item {
+      font-family: 'Raleway'; }
+
+.header-item {
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+  font-size: 16px; }
+  .header-item--current {
+    color: #DA1F39;
+    font-weight: 700; }
