@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url("../fonts/DelaGothicOne-Regular.woff2") format("woff2"), url("../fonts/DelaGothicOne-Regular.woff") format("woff"), url("../fonts/DelaGothicOne-Regular.eot") format("eot");
+  font-weight: 400; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 166%; }
+  @media (min-width: 1200px) {
+    body {
+      font-size: 18px; } }
+
+@media (min-width: 992px) {
+  .mobile-show {
+    display: none; } }
+
+@media (max-width: 991px) {
+  .desktop-show {
+    display: none; } }
+
 header {
   margin: 20px 10px;
   display: -webkit-box;
@@ -88,33 +112,21 @@ footer {
   grid-column: 3;
   grid-row: 1 / 5; }
 
-@font-face {
-  font-family: 'Dela Gothic One';
-  src: url("../fonts/DelaGothicOne-Regular.woff2") format("woff2"), url("../fonts/DelaGothicOne-Regular.woff") format("woff"), url("../fonts/DelaGothicOne-Regular.eot") format("eot");
-  font-weight: 400; }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway';
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 166%; }
-
-@media (min-width: 992px) {
-  .mobile-show {
-    display: none; } }
-
-@media (max-width: 991px) {
-  .desktop-show {
-    display: none; } }
-
-.breadcrumbs__link {
-  text-decoration: none;
-  color: black;
-  font-weight: 600; }
-  .breadcrumbs__link--current {
-    font-weight: 300; }
+.breadcrumbs {
+  padding-bottom: 20px; }
+  .breadcrumbs__link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600; }
+    .breadcrumbs__link--current {
+      font-weight: 300; }
+    .breadcrumbs__link--mobile {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .breadcrumbs .nav-back {
+    width: 20px;
+    padding-right: 10px; }
 
 aside {
   margin-bottom: 20px; }
@@ -161,6 +173,8 @@ aside {
       width: 200px;
       height: 800px;
       padding-top: 0px; } }
+  .filters-pane--collapsed {
+    display: none; }
 
 .filter {
   -ms-flex-preferred-size: 50%;
@@ -227,9 +241,23 @@ aside {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 374px) {
+    .catalogue-items {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.catalogue-item__link {
+  max-width: 48%;
+  text-decoration: none;
+  color: black; }
+  @media (max-width: 374px) {
+    .catalogue-item__link {
+      max-width: 100%; } }
 
 .product-item {
-  max-width: 48%;
+  height: 100%;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,14 +266,15 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (max-width: 374px) {
-    .product-item {
-      max-width: 100%; } }
+  .product-item__description {
+    padding: 12px 0; }
   .product-item__price {
     font-weight: 600;
-    margin-top: auto;
-    font-size: 14px;
-    margin-bottom: 30px; }
+    margin: auto 0 30px 0;
+    font-size: 14px; }
+    @media (min-width: 1200px) {
+      .product-item__price {
+        font-size: 20px; } }
   .product-item .hovered-img {
     display: none; }
   .product-item:hover .product-item__image {
@@ -272,3 +301,18 @@ aside {
             justify-content: center; }
   .loader__icon {
     padding-left: 5px; }
+
+.product {
+  margin: 0; }
+  .product__image {
+    width: 100%; }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .gallery__image {
+    padding: 5px 10px 10px 0; }
+    .gallery__image:last-child {
+      padding: 5px 0 10px 0; }

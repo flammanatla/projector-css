@@ -1,0 +1,23 @@
+.breadcrumbs {
+    padding-bottom: 20px;
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+
+        &--current {
+            font-weight: 300;
+        }
+
+
+        &--mobile {
+            display: flex;
+        }
+    }
+
+    .nav-back {
+        width: 20px;
+        padding-right: 10px;
+    }
+}
