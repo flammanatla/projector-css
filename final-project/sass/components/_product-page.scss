@@ -1,0 +1,178 @@
+.images {
+    @include for-large-up {
+        width: 50vw;
+    }
+}
+
+.gallery {
+    display: flex;
+    overflow: hidden;
+
+    @include for-large-up {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+
+    &__image {
+        padding: 10px 10px 0 0;
+
+        @include for-large-up {
+            padding: 10px 0 0 0;
+            flex-basis: 48%;
+        }
+    }
+}
+
+.product-block {
+    @include for-large-up {
+        display: flex;
+    }
+}
+
+.product {
+    margin: 0;
+
+    &__image {
+        width: 100%;
+        display: block;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 26px;
+        font-family: 'Dela Gothic One';
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+
+    &__amount {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 20px;
+
+    }
+
+    &__size-selector {
+        display: flex;
+
+        padding: 20px 0 20px;
+
+        .size {
+            margin-right: 20px;
+
+            border: 1px solid #B9B9B9;
+            padding: 5px 10px;
+            background-color: transparent;
+            font-weight: 300;
+            text-decoration: none;
+
+            &--selected {
+                font-weight: 600;
+                color: #DA1F39;
+                border: 1px solid #DA1F39;
+            }
+
+            &--unavailable {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__availability {
+        color: #DA1F39;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__price {
+        margin: 30px 0 20px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__size-table {
+        color: black;
+    }
+}
+
+.purchase {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+    .amount-selector {
+        font-size: 16px;
+        margin-right: auto;
+
+        .amount {
+            padding: 0 15px;
+        }
+
+        &__btn {
+
+            border: none;
+            font-size: 16px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+
+
+
+// .faq {
+//     width: 32vw;
+//     margin-left: auto;
+// }
+
+.faq {
+    padding: 50px 0;
+
+    &__item {
+        border-top: 1px solid #B9B9B9;
+    }
+
+    &__question {
+        padding: 15px 0;
+        font-weight: bold;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__answer {
+        padding-bottom: 15px;
+
+        &--hidden {
+            display: none;
+        }
+
+    }
+
+}
+
+
+.recommendation {
+
+    .catalogue-item__link {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .scroll {
+        display: flex;
+        justify-content: space-between;
+
+        &__link {
+            position: relative;
+            top: -250px;
+        }
+    }
+}

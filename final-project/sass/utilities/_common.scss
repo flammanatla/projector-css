@@ -31,3 +31,46 @@ body {
         display: none;
     }
 }
+
+.container {
+    margin: 0 10px;
+
+    @include for-large-up {
+        margin: 0 80px;
+
+        &--no-margin {
+            margin: 0;
+        }
+    }
+
+}
+
+.h1 {
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    line-height: 150%;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+
+    &--right {
+        text-align: right;
+    }
+
+    @include for-large-up {
+        font-size: 30px;
+        margin: 30px 0 60px;
+    }
+
+    @include for-extra-large-up {
+        font-size: 36px;
+    }
+}
+
+.dropdown {
+    padding: 0 5px;
+
+    &--expanded {
+        rotate: 180deg;
+        padding: 1px 5px 0 5px;
+    }
+}

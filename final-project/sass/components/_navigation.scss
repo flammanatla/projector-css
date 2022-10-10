@@ -21,3 +21,40 @@
         padding-right: 10px;
     }
 }
+
+.scroll {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+
+    @include for-large-up {
+        display: none;
+    }
+
+    &__link {
+        padding: 10px 5px;
+    }
+
+    .scroll-forward {
+        rotate: 180deg;
+    }
+}
+
+.loader {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 30px 0 50px;
+    font-weight: 600;
+
+    &__link {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        padding-left: 5px;
+    }
+}
