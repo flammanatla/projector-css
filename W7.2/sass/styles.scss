@@ -1,0 +1,28 @@
+@import "components/_button";
+@import "components/_faq";
+@import "components/_section";
+@import "components/_form";
+@import "components/_partners";
+
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src:
+        url('../fonts/BasisGrotesquePro-Regular.woff2') format('woff2'),
+        url('../fonts/BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src:
+        url('../fonts/BasisGrotesquePro-Bold.woff2') format('woff2'),
+        url('../fonts/BasisGrotesquePro-Bold.woff2') format('woff');
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'BasisGrotesquePro';
+    font-size: 16px;
+}

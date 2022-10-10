@@ -1,0 +1,42 @@
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__field {
+        padding: 25px 0;
+    }
+
+    &__field-name {
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+    }
+
+    &__input {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #737373;
+        background-color: transparent;
+        font-family: 'BasisGrotesquePro';
+        color: #C4C4C4;
+        padding-top: 20px;
+        width: 32vw;
+
+        &::placeholder {
+            font-family: 'BasisGrotesquePro';
+            font-size: 14px;
+            color: #C4C4C4;
+        }
+    }
+
+    &__msg {
+        font-size: 14px;
+        color: #C4C4C4;
+    }
+}
+
+.empty-block {
+    width: 100%;
+}

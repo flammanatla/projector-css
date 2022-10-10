@@ -1,0 +1,38 @@
+@import "utilities/_mixins";
+
+.faq {
+    width: 32vw;
+    margin-left: auto;
+
+    @include for-non-desktop {
+        width: 100%;
+
+    }
+
+    &__item {
+        border-top: 1px solid #B9B9B9;
+    }
+
+    &__question {
+        padding: 30px 0 70px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__answer {
+        padding-bottom: 70px;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__icon {
+        width: 15px;
+        height: 25px;
+    }
+}
