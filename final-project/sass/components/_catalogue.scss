@@ -130,8 +130,8 @@ aside {
     &:hover {
 
         .product-item__image {
-            max-width: 90%;
-            max-height: 90%;
+            transform: scale(0.9);
+            transition: width .5s linear, height .5s linear;
         }
     }
 
@@ -156,5 +156,4 @@ aside {
 
 .product-item__image {
     display: block;
-    opacity: 0.3;
 }

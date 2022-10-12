@@ -174,15 +174,18 @@ aside {
       .product-item__price {
         font-size: 20px; } }
   .product-item:hover .product-item__image {
-    max-width: 90%;
-    max-height: 90%; }
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: width .5s linear, height .5s linear;
+    -o-transition: width .5s linear, height .5s linear;
+    transition: width .5s linear, height .5s linear; }
 
 .bg-image {
   background-image: url("../img/products/bc-kyiv.jpg"); }
 
 .product-item__image {
-  display: block;
-  opacity: 0.3; }
+  display: block; }
 
 @media (min-width: 992px) {
   .images {
