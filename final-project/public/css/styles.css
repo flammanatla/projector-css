@@ -173,11 +173,16 @@ aside {
     @media (min-width: 1200px) {
       .product-item__price {
         font-size: 20px; } }
-  .product-item .hovered-img {
-    display: none; }
   .product-item:hover .product-item__image {
     max-width: 90%;
-    background-image: url("../../public/img/products/pexels-max-vakhtbovych-6143369 1.jpg"); }
+    max-height: 90%; }
+
+.bg-image {
+  background-image: url("../img/products/bc-kyiv.jpg"); }
+
+.product-item__image {
+  display: block;
+  opacity: 0.3; }
 
 @media (min-width: 992px) {
   .images {
@@ -315,11 +320,12 @@ aside {
           -ms-flex-pack: justify;
               justify-content: space-between;
       max-width: none;
-      margin: 0 0 0 80px; } }
+      margin: 0 0 0 80px;
+      gap: 50px;
+      overflow: hidden; } }
   .recommendation .recommendation-items .recommendation-item__link {
     text-decoration: none;
-    color: black;
-    max-width: 20%; }
+    color: black; }
 
 .recommendation .scroll {
   display: -webkit-box;
@@ -339,9 +345,11 @@ aside {
       top: -100px;
       margin: 0 80px 0 0; } }
 
-@media (min-width: 992px) {
-  .slider {
-    margin: 0 80px 80px 80px; } }
+.slider {
+  border-bottom: solid 3px #f4bcc4; }
+  @media (min-width: 992px) {
+    .slider {
+      margin: 0 80px 80px 80px; } }
 
 header {
   margin: 20px 10px;

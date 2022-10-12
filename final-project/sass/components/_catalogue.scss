@@ -127,17 +127,34 @@ aside {
         }
     }
 
-    .hovered-img {
-        display: none;
-    }
-
     &:hover {
-        .product-item__image {
-            display: none;
-        }
 
-        .hovered-img {
-            display: inline;
+        .product-item__image {
+            max-width: 90%;
+            max-height: 90%;
         }
     }
+
+    // .hovered-img {
+    //     display: none;
+    // }
+
+    // &:hover {
+    //     .product-item__image {
+    //         display: none;
+    //     }
+
+    //      .hovered-img {
+    //          display: inline;
+    //      }
+    // }
+}
+
+.bg-image {
+    background-image: url("../img/products/bc-kyiv.jpg");
+}
+
+.product-item__image {
+    display: block;
+    opacity: 0.3;
 }
