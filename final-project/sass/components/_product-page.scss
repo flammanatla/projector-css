@@ -67,6 +67,7 @@
             background-color: transparent;
             font-weight: 300;
             text-decoration: none;
+            color: black;
 
             &--selected {
                 font-weight: 600;
@@ -154,25 +155,50 @@
         }
 
     }
-
 }
 
 
 .recommendation {
+    .h1 {
+        margin-left: 80px;
+    }
 
-    .catalogue-item__link {
+    .recommendation-items {
         max-width: 80%;
-        display: block;
         margin: 0 auto;
+
+        @include for-large-up {
+            display: flex;
+            justify-content: space-between;
+            max-width: none;
+            margin: 0 0 0 80px;
+        }
+
+        .recommendation-item__link {
+            text-decoration: none;
+            color: black;
+            max-width: 20%;
+        }
     }
 
     .scroll {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        top: 250px;
+        margin: 0;
 
-        &__link {
-            position: relative;
-            top: -250px;
+        @include for-large-up {
+            justify-content: flex-end;
+            top: -100px;
+            margin: 0 80px 0 0;
         }
+    }
+}
+
+.slider {
+    @include for-large-up {
+
+        margin: 0 80px 80px 80px;
     }
 }

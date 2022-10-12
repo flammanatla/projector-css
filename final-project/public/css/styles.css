@@ -176,9 +176,8 @@ aside {
   .product-item .hovered-img {
     display: none; }
   .product-item:hover .product-item__image {
-    display: none; }
-  .product-item:hover .hovered-img {
-    display: inline; }
+    max-width: 90%;
+    background-image: url("../../public/img/products/pexels-max-vakhtbovych-6143369 1.jpg"); }
 
 @media (min-width: 992px) {
   .images {
@@ -244,7 +243,8 @@ aside {
       padding: 5px 10px;
       background-color: transparent;
       font-weight: 300;
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
       .product__size-selector .size--selected {
         font-weight: 600;
         color: #DA1F39;
@@ -300,10 +300,26 @@ aside {
     .faq__answer--hidden {
       display: none; }
 
-.recommendation .catalogue-item__link {
+.recommendation .h1 {
+  margin-left: 80px; }
+
+.recommendation .recommendation-items {
   max-width: 80%;
-  display: block;
   margin: 0 auto; }
+  @media (min-width: 992px) {
+    .recommendation .recommendation-items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      max-width: none;
+      margin: 0 0 0 80px; } }
+  .recommendation .recommendation-items .recommendation-item__link {
+    text-decoration: none;
+    color: black;
+    max-width: 20%; }
 
 .recommendation .scroll {
   display: -webkit-box;
@@ -311,10 +327,21 @@ aside {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .recommendation .scroll__link {
-    position: relative;
-    top: -250px; }
+          justify-content: space-between;
+  position: relative;
+  top: 250px;
+  margin: 0; }
+  @media (min-width: 992px) {
+    .recommendation .scroll {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      top: -100px;
+      margin: 0 80px 0 0; } }
+
+@media (min-width: 992px) {
+  .slider {
+    margin: 0 80px 80px 80px; } }
 
 header {
   margin: 20px 10px;
@@ -361,8 +388,6 @@ footer {
   font-size: 14px;
   line-height: 166%;
   background-color: #F4F4F4; }
-  footer .container {
-    margin: 0 10px; }
   footer .logo {
     display: block;
     margin: 0 auto;
