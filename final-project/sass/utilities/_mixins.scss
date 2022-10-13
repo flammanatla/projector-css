@@ -1,3 +1,9 @@
+@mixin for-huge-up {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
+
 @mixin for-extra-large-up {
     @media (min-width: 1200px) {
         @content;

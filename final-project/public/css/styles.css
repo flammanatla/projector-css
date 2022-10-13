@@ -130,63 +130,6 @@ aside {
         -ms-flex-align: baseline;
             align-items: baseline; } }
 
-.catalogue-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  @media (max-width: 374px) {
-    .catalogue-items {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
-
-.catalogue-item__link {
-  max-width: 48%;
-  text-decoration: none;
-  color: black; }
-  @media (max-width: 374px) {
-    .catalogue-item__link {
-      max-width: 100%; } }
-
-.product-item {
-  height: 100%;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .product-item__description {
-    padding: 12px 0; }
-  .product-item__price {
-    font-weight: 600;
-    margin: auto 0 30px 0;
-    font-size: 14px; }
-    @media (min-width: 1200px) {
-      .product-item__price {
-        font-size: 20px; } }
-  .product-item:hover .product-item__image {
-    -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transition: width .5s linear, height .5s linear;
-    -o-transition: width .5s linear, height .5s linear;
-    transition: width .5s linear, height .5s linear; }
-
-.bg-image {
-  background-image: url("../img/products/bc-kyiv.jpg"); }
-
-.product-item__image {
-  display: block; }
-
 @media (min-width: 992px) {
   .images {
     width: 50vw; } }
@@ -209,8 +152,7 @@ aside {
     @media (min-width: 992px) {
       .gallery__image {
         padding: 10px 0 0 0;
-        -ms-flex-preferred-size: 48%;
-            flex-basis: 48%; } }
+        width: 48%; } }
 
 @media (min-width: 992px) {
   .product-block {
@@ -261,14 +203,51 @@ aside {
         opacity: 0.5; }
   .product__availability {
     color: #DA1F39; }
-    .product__availability--hidden {
-      display: none; }
   .product__price {
     margin: 30px 0 20px;
     font-size: 18px;
     font-weight: 700; }
   .product__size-table {
     color: black; }
+
+.product-item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto; }
+  .product-item__description {
+    padding: 12px 0; }
+  .product-item__price {
+    font-weight: 600;
+    margin: auto 0 30px 0;
+    font-size: 14px; }
+    @media (min-width: 1200px) {
+      .product-item__price {
+        font-size: 20px; } }
+  .product-item .bg-image {
+    background-image: url("../img/products/bc-kyiv.jpg"); }
+    .product-item .bg-image .product-item__image {
+      display: block;
+      width: 100%; }
+      .product-item .bg-image .product-item__image--centered {
+        margin: 0 auto; }
+  .product-item:hover .product-item__image {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transition: width .5s linear, height .5s linear;
+    -o-transition: width .5s linear, height .5s linear;
+    transition: width .5s linear, height .5s linear; }
+  .product-item--fixed-width {
+    width: 300px; }
+
+.hidden {
+  display: none; }
 
 .purchase {
   display: -webkit-box;
@@ -308,11 +287,11 @@ aside {
     .faq__answer--hidden {
       display: none; }
 
-.recommendation .h1 {
-  margin-left: 80px; }
+@media (min-width: 992px) {
+  .recommendation .h1 {
+    margin-left: 80px; } }
 
 .recommendation .recommendation-items {
-  max-width: 80%;
   margin: 0 auto; }
   @media (min-width: 992px) {
     .recommendation .recommendation-items {
@@ -334,12 +313,16 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
   top: 250px;
-  margin: 0; }
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (min-width: 576px) {
+    .recommendation .scroll {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   @media (min-width: 992px) {
     .recommendation .scroll {
       -webkit-box-pack: end;
@@ -353,6 +336,34 @@ aside {
   @media (min-width: 992px) {
     .slider {
       margin: 0 80px 80px 80px; } }
+
+.catalogue-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 374px) {
+    .catalogue-items {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media (min-width: 1500px) {
+    .catalogue-items {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+
+.catalogue-item__link {
+  max-width: 48%;
+  text-decoration: none;
+  color: black; }
+  @media (max-width: 374px) {
+    .catalogue-item__link {
+      max-width: 100%; } }
 
 header {
   margin: 20px 10px;
